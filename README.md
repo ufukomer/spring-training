@@ -1,1 +1,1 @@
-# SpringTraining
+# Spring Training

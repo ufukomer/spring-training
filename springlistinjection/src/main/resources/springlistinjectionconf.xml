@@ -35,5 +35,10 @@
                 <value>Javascript</value>
             </set>
         </property>
+        <!-- Set null value to property -->
+        <!--<property name="string" value=""/>-->
+        <property name="string">
+            <null/>
+        </property>
     </bean>
 </beans>

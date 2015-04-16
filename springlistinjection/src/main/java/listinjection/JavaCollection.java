@@ -14,6 +14,11 @@ public class JavaCollection {
     private Set set;
     private Map map;
     private Properties properties;
+    private String string;
+
+    public void setString(String string) {
+        this.string = string;
+    }
 
     public void setProperties(Properties addressProp) {
         this.properties = addressProp;
@@ -51,4 +56,8 @@ public class JavaCollection {
         return properties;
     }
 
+    public String getString() {
+        System.out.println("String Value: " + string.toString());
+        return string;
+    }
 }

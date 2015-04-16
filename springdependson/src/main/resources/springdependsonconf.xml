@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- Spring creates the molecules prior to water element -->
+    <bean id="water" class="dependson.Water" depends-on="first_hydrogen,second_hydrogen,oxygen"/>
+    <bean id="first_hydrogen" class="dependson.Hydrogen"/>
+    <bean id="second_hydrogen" class="dependson.Hydrogen"/>
+    <bean id="oxygen" class="dependson.Oxygen"/>
+</beans>

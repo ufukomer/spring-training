@@ -11,6 +11,7 @@
     <modules>
         <module>springhelloworld</module>
         <module>springstrategy</module>
+        <module>springlistinjection</module>
     </modules>
 
 

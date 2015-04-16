@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="javaCollection" class="listinjection.JavaCollection">
+        <property name="list">
+            <list>
+                <value>Java</value>
+                <value>Thymeleaf</value>
+                <value>Spring</value>
+                <value>Javascript</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="Java"/>
+                <entry key="2" value="Thymeleaf"/>
+                <entry key="3" value="Spring"/>
+                <entry key="4" value="Javascript"/>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="one">Java</prop>
+                <prop key="two">Thymeleaf</prop>
+                <prop key="tree">Spring</prop>
+                <prop key="four">Javascript</prop>
+            </props>
+        </property>
+        <property name="set">
+            <set>
+                <value>Java</value>
+                <value>Thymeleaf</value>
+                <value>Spring</value>
+                <value>Javascript</value>
+            </set>
+        </property>
+    </bean>
+</beans>

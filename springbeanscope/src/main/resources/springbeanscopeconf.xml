@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="message" class="beanscope.Message" scope="prototype">
+        <constructor-arg ref="text"/>
+    </bean>
+
+    <!-- Custom scope configuration -->
+    <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
+        <property name="scopes">
+            <map>
+                <entry key="thread">
+                    <bean class="beanscope.ThreadScope"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="text" class="beanscope.Text" scope="thread">
+        <constructor-arg value="This text initialized in constructor of Text class"/>
+    </bean>
+</beans>

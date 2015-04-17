@@ -13,6 +13,7 @@
         <module>springstrategy</module>
         <module>springlistinjection</module>
         <module>springdependson</module>
+        <module>springbeanscope</module>
     </modules>
 
 

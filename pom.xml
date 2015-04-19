@@ -14,6 +14,7 @@
         <module>springlistinjection</module>
         <module>springdependson</module>
         <module>springbeanscope</module>
+        <module>springmethodinjection</module>
     </modules>
 
 

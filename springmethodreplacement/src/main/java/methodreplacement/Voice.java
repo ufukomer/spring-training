@@ -10,6 +10,7 @@ public class Voice {
     private final UUID id;
 
     public Voice() {
+        // Generates random ID for each voice object
         this.id = UUID.randomUUID();
     }
 

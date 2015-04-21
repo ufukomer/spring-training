@@ -5,10 +5,13 @@ package methodreplacement;
  */
 public abstract class Recorder {
 
+    // Method injection
     public abstract Voice generateVoice();
 
+    // Method replacement
     public abstract void recordOnCassette(Voice voice);
 
+    // Method replacement
     public abstract void recordOnCylinder(Voice voice);
 
 }

@@ -16,7 +16,7 @@
         <module>springbeanscope</module>
         <module>springmethodinjection</module>
         <module>springmethodreplacement</module>
+        <module>springfactorymethod</module>
     </modules>
-
 
 </project>

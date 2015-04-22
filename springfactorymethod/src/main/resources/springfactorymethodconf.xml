@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="informer" class="factorymethod.Informer">
+        <property name="shape" ref="shapeFactory"/>
+    </bean>
+
+    <bean id="shapeFactory" class="factorymethod.ShapeFactory" factory-method="newInstance"/>
+</beans>

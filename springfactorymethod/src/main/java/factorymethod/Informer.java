@@ -5,18 +5,28 @@ package factorymethod;
  */
 public class Informer {
 
-    private Shape shape;
+    private Triangle triangle;
+    private Circle circle;
 
-    public Shape getShape() {
-        return shape;
+    public void setCircle(Circle circle) {
+        this.circle = circle;
     }
 
-    public void setShape(Shape shape) {
-        this.shape = shape;
+    public Circle getCircle() {
+        return circle;
+    }
+
+    public void setTriangle(Triangle triangle) {
+        this.triangle = triangle;
+    }
+
+    public Triangle getTriangle() {
+        return triangle;
     }
 
     public void printInfo() {
-        getShape().printInfo();
+        getCircle().printInfo();
+        getTriangle().printInfo();
     }
 
 }

@@ -4,8 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="informer" class="factorymethod.Informer">
-        <property name="shape" ref="shapeFactory"/>
+        <property name="triangle" ref="triangleFactory"/>
+        <property name="circle" ref="circleFactory"/>
     </bean>
 
-    <bean id="shapeFactory" class="factorymethod.ShapeFactory" factory-method="newInstance"/>
+    <!-- Factory Method -->
+    <bean id="circleFactory" class="factorymethod.ShapeFactory" factory-method="newCircle"/>
+    <!-- Factory Class -->
+    <bean id="shapeFactory" class="factorymethod.ShapeFactory"/>
+    <bean id="triangleFactory" factory-bean="shapeFactory" factory-method="newTriangle"/>
 </beans>

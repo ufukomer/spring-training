@@ -5,9 +5,13 @@ package factorymethod;
  */
 public class ShapeFactory {
 
+    public Triangle newTriangle() {
+        return new Triangle();
+    }
+
     // factory-method
-    public static Shape newInstance() {
-        return new Shape();
+    public static Circle newCircle() {
+        return new Circle();
     }
 
 }

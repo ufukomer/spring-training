@@ -16,3 +16,4 @@ Define object initialization order with depends-on element.
 #### 6. Method Injection (springmethodinjection)
 #### 7. Method Replacement (springmethodreplacement)
 Exemplifies method replacement with method injection.
+#### 8. Factory Method & Factory Class (springfactorymethod)

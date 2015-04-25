@@ -15,11 +15,11 @@ public class FactoryInterfaceTest {
         ApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("springfactorybeaninterfaceconf.xml");
 
-        Employee manager = applicationContext.getBean("manager", Employee.class);
-        System.out.println(manager);
-
         Employee director = applicationContext.getBean("director", Employee.class);
         System.out.println(director);
+
+        Database database = applicationContext.getBean("database", Database.class);
+        System.out.println(database);
     }
 
 }

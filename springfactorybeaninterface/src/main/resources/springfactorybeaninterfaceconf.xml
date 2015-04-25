@@ -2,7 +2,21 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="database" class="factorybeaninterface.Database" scope="prototype">
+        <!-- List Injection -->
+        <property name="employee">
+            <list>
+                <ref bean="manager"/>
+                <ref bean="director"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- When we use ApplicationContext.getBean() method int test class spring creates -->
+    <!-- an employee object by using getObject() method of FactoryBean class -->
     <bean id="manager" class="factorybeaninterface.EmployeeFactoryBean">
+        <!-- Value of job assigned below -->
         <property name="job" value="Manager"/>
     </bean>
 

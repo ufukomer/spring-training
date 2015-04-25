@@ -17,6 +17,7 @@
         <module>springmethodinjection</module>
         <module>springmethodreplacement</module>
         <module>springfactorymethod</module>
+        <module>springfactorybeaninterface</module>
     </modules>
 
 </project>

@@ -18,5 +18,4 @@ public class Voice {
     public String toString() {
         return this.id.toString();
     }
-
 }

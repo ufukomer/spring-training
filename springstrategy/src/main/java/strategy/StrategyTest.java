@@ -15,5 +15,4 @@ public class StrategyTest {
        Context context = applicationContext.getBean("context", Context.class);
        context.executeStrategy(5, 10);
    }
-
 }

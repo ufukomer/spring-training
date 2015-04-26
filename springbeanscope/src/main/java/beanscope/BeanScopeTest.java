@@ -10,8 +10,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class BeanScopeTest {
     @Test
     public void bean_scope_test() {
+
         ApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("springbeanscopeconf.xml");
+
         Message messageOne = applicationContext.getBean("message", Message.class);
         Message messageTwo = applicationContext.getBean("message", Message.class);
 

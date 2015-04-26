@@ -52,5 +52,4 @@ public class Employee {
                 + " LastName: " + lastName + ","
                 + " Job: " + job + " ]";
     }
-
 }

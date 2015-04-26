@@ -1,7 +1,7 @@
 package factorybeaninterface;
 
-/**
- * Created by Ufuk on 26-04-15.
+/**<p> Contains multiple employee objects.
+ * <p> Created by Ufuk on 26-04-15.
  */
 public class Database {
 
@@ -26,5 +26,4 @@ public class Database {
 
         return toString;
     }
-
 }

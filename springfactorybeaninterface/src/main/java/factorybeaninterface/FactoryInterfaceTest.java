@@ -21,5 +21,4 @@ public class FactoryInterfaceTest {
         Database database = applicationContext.getBean("database", Database.class);
         System.out.println(database);
     }
-
 }

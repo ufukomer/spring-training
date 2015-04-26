@@ -28,5 +28,4 @@ public class Informer {
         getCircle().printInfo();
         getTriangle().printInfo();
     }
-
 }

@@ -52,5 +52,4 @@ public class ThreadScope implements Scope {
     public String getConversationId() {
         return Thread.currentThread().getName();
     }
-
 }

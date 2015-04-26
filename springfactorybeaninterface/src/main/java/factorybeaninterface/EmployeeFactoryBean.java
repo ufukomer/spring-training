@@ -37,5 +37,4 @@ public class EmployeeFactoryBean implements FactoryBean<Object> {
     public boolean isSingleton() {
         return false;
     }
-
 }

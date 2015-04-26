@@ -18,5 +18,4 @@ public class Message {
     public void setMessage(String text) {
         this.text.setText(text);
     }
-
 }

@@ -13,5 +13,4 @@ public abstract class Recorder {
 
     // Method replacement
     public abstract void recordOnCylinder(Voice voice);
-
 }

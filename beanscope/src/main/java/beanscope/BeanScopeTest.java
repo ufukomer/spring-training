@@ -8,6 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Created by Ufuk on 17-04-15.
  */
 public class BeanScopeTest {
+
     @Test
     public void bean_scope_test() {
 

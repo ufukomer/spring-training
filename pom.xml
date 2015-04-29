@@ -18,6 +18,7 @@
         <module>methodreplacement</module>
         <module>factorymethod</module>
         <module>factorybeaninterface</module>
+        <module>namespace</module>
     </modules>
 
     <dependencies>

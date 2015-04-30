@@ -23,3 +23,6 @@ Exemplifies p-namespace, c-namepsace usage.
 #### 11. Property Placeholder Configurer (propertyplaceholderconfigurer)
 Purpose of using these holders is making configuration files independent of specific values. For example, this is appropriate for database properties.
 #### 12. Spring Bean Lifecycle (beanlifecycle)
+#### 13. Spring Bean Post Processor & @Required (beanpostprocessor)
+- The BeanPostProcessor interface defines callback methods that you can implement to provide your own instantiation logic.
+- @Required annotation indicates that the affected bean property must be populated in XML configuration file at configuration time otherwise the container throws a BeanInitializationException exception.

@@ -7,10 +7,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * Created by Ufuk on 30-04-15.
  */
-public class HelloWorldTest {
+public class PropertyPlaceholderConfigurerTest {
 
     @Test
-    public void hello_world_test() {
+    public void property_placeholder_configurer() {
 
         ApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("propertyplaceholderconfigurerconf.xml");

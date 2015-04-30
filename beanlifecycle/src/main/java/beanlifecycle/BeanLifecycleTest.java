@@ -7,9 +7,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * Created by Ufuk on 30-04-15.
  */
-public class HelloWorldTest {
+public class BeanLifecycleTest {
     @Test
-    public void hello_world_test() {
+    public void bean_lifecycle_test() {
 
         AbstractApplicationContext contextOne =
                 new ClassPathXmlApplicationContext("beanlifecycleconf.xml");

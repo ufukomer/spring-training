@@ -20,6 +20,7 @@
         <module>factorybeaninterface</module>
         <module>namespace</module>
         <module>propertyplaceholderconfigurer</module>
+        <module>beanlifecycle</module>
     </modules>
 
     <dependencies>

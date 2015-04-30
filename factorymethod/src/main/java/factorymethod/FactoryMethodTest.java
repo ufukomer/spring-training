@@ -11,7 +11,7 @@ public class FactoryMethodTest {
     @Test
     public void factory_method_test() {
         ApplicationContext applicationContext =
-                new ClassPathXmlApplicationContext("springfactorymethodconf.xml");
+                new ClassPathXmlApplicationContext("factorymethodconf.xml");
         Informer informer = applicationContext.getBean("informer", Informer.class);
         informer.printInfo();
     }

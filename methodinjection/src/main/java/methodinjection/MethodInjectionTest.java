@@ -11,7 +11,7 @@ public class MethodInjectionTest {
     @Test
     public void method_injection_test() {
         ApplicationContext applicationContext =
-                new ClassPathXmlApplicationContext("springmethodinjectionconf.xml");
+                new ClassPathXmlApplicationContext("methodinjectionconf.xml");
         TicketVendingMachine ticketVendingMachine =
                 applicationContext.getBean("ticketVendingMachine", TicketVendingMachine.class);
         Ticket ticket = ticketVendingMachine.generateTicket();

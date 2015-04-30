@@ -13,7 +13,7 @@ public class BeanScopeTest {
     public void bean_scope_test() {
 
         ApplicationContext applicationContext =
-                new ClassPathXmlApplicationContext("springbeanscopeconf.xml");
+                new ClassPathXmlApplicationContext("beanscopeconf.xml");
 
         Message messageOne = applicationContext.getBean("message", Message.class);
         Message messageTwo = applicationContext.getBean("message", Message.class);

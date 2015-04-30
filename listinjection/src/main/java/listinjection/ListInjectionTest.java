@@ -11,7 +11,7 @@ public class ListInjectionTest {
     @Test
     public void list_injection_test() {
         ApplicationContext applicationContext =
-                new ClassPathXmlApplicationContext("springlistinjectionconf.xml");
+                new ClassPathXmlApplicationContext("listinjectionconf.xml");
         JavaCollection javaCollection =
                 applicationContext.getBean("javaCollection", JavaCollection.class);
 

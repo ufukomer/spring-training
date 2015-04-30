@@ -20,3 +20,5 @@ Exemplifies method replacement with method injection.
 #### 9. FactoryBean Interface (factorybeaninterface)
 #### 10. Namespaces (namespace)
 Exemplifies p-namespace, c-namepsace usage.
+#### 11. Property Placeholder Configurer (propertyplaceholderconfigurer)
+Purpose of using these holders is making configuration files independent of specific values. For example, this is appropriate for database properties.

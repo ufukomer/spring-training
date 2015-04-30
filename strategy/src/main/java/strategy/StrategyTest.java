@@ -11,7 +11,7 @@ public class StrategyTest {
 
    @Test
    public void strategy_test() {
-       ApplicationContext applicationContext = new ClassPathXmlApplicationContext("springstrategyconf.xml");
+       ApplicationContext applicationContext = new ClassPathXmlApplicationContext("strategyconf.xml");
        Context context = applicationContext.getBean("context", Context.class);
        context.executeStrategy(5, 10);
    }

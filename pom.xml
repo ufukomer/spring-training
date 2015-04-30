@@ -19,6 +19,7 @@
         <module>factorymethod</module>
         <module>factorybeaninterface</module>
         <module>namespace</module>
+        <module>propertyplaceholderconfigurer</module>
     </modules>
 
     <dependencies>

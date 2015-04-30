@@ -4,10 +4,6 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Created by Ufuk on 12-04-15.
  */
@@ -15,7 +11,7 @@ public class HelloWorldTest {
 
     @Test
     public void hello_world_test() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("springhelloworldconf.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("helloworldconf.xml");
         HelloWorldContext helloWorldContext = context.getBean("context", HelloWorldContext.class);
         helloWorldContext.showMessage();
     }

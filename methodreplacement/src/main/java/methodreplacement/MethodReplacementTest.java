@@ -11,7 +11,7 @@ public class MethodReplacementTest {
     @Test
     public void method_replacement_test() {
         ApplicationContext applicationContext =
-                new ClassPathXmlApplicationContext("springmethodreplacement.xml");
+                new ClassPathXmlApplicationContext("methodreplacement.xml");
         Recorder recorder = applicationContext.getBean("recorder", Recorder.class);
 
         Voice voice = recorder.generateVoice();

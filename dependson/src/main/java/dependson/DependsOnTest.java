@@ -11,7 +11,7 @@ public class DependsOnTest {
     @Test
     public void depends_on_test() {
         ApplicationContext context =
-                new ClassPathXmlApplicationContext("springdependsonconf.xml");
+                new ClassPathXmlApplicationContext("dependsonconf.xml");
         Water water = context.getBean("water", Water.class);
     }
 }

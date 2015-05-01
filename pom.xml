@@ -22,6 +22,7 @@
         <module>propertyplaceholderconfigurer</module>
         <module>beanlifecycle</module>
         <module>beanpostprocessor</module>
+        <module>constants</module>
     </modules>
 
     <dependencies>

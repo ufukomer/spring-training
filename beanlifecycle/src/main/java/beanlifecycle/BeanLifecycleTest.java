@@ -18,14 +18,5 @@ public class BeanLifecycleTest {
         messageOne.getMessage();
 
         contextOne.registerShutdownHook();
-
-        /* Default initialization and destroy methods usage */
-//        AbstractApplicationContext contextTwo =
-//                new ClassPathXmlApplicationContext("default-methodconf.xml");
-//
-//        HelloWorld messageTwo = contextTwo.getBean("helloWorld", HelloWorld.class);
-//        messageTwo.getMessage();
-//
-//        contextTwo.registerShutdownHook();
     }
 }

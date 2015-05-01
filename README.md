@@ -15,7 +15,7 @@ Define object initialization order with depends-on element.
 | global-session| This scopes a bean definition to a global HTTP session. Only valid in the context of a web-aware Spring ApplicationContext.      |
 #### 6. Method Injection (methodinjection)
 #### 7. Method Replacement (methodreplacement)
-??* Exemplifies method replacement with method injection.
+Exemplifies method replacement with method injection.
 #### 8. Factory Method & Factory Class (factorymethod)
 #### 9. FactoryBean Interface (factorybeaninterface)
 #### 10. Namespaces (namespace)
@@ -25,8 +25,7 @@ Purpose of using these holders is making configuration files independent of spec
 #### 12. Spring Bean Lifecycle (beanlifecycle)
 - beanlifecycle: Initialize and destroy specific variables by using init-method, destroy-method in spring configuration file.
 - defaultmethods: Define init and destroy methods inside 'beans' tag.
-- lifecyclemethods: Implementation of InitializingBean, DisposableBean classes to perform custom initialization, destroy. 
-<br/> @PostConstruct, @PostDestroy with these annotation we are independent 
+- lifecyclemethods: Implementation of InitializingBean, DisposableBean classes to perform custom initialization, destroy. @PostConstruct, @PostDestroy with these annotations init and destroy methods are independent from configuration file. But we have to define CommonAnnotationBeanPostProcessor class in configuration file. 
 #### 13. Spring Bean Post Processor & @Required (beanpostprocessor)
 - The BeanPostProcessor interface defines callback methods that you can implement to provide your own instantiation logic.
 - @Required annotation indicates that the affected bean property must be populated in XML configuration file at configuration time otherwise the container throws a BeanInitializationException exception.

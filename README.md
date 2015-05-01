@@ -26,6 +26,7 @@ Purpose of using these holders is making configuration files independent of spec
 - beanlifecycle: Initialize and destroy specific variables by using init-method, destroy-method in spring configuration file.
 - defaultmethods: Define init and destroy methods inside 'beans' tag.
 - lifecyclemethods: Implementation of InitializingBean, DisposableBean classes to perform custom initialization, destroy. @PostConstruct, @PostDestroy with these annotations init and destroy methods are independent from configuration file. But we have to define CommonAnnotationBeanPostProcessor class in configuration file. 
+
 #### 13. Spring Bean Post Processor & @Required (beanpostprocessor)
 - The BeanPostProcessor interface defines callback methods that you can implement to provide your own instantiation logic.
 - @Required annotation indicates that the affected bean property must be populated in XML configuration file at configuration time otherwise the container throws a BeanInitializationException exception.

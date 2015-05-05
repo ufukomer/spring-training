@@ -15,5 +15,11 @@ public class BeanDefInheritanceTest {
 
         Car clio = context.getBean("clio", Car.class);
         clio.showSpecifications();
+
+        Car fiesta = context.getBean("fiesta", Car.class);
+        fiesta.showSpecifications();
+
+        Car a5 = context.getBean("a5", Car.class);
+        a5.showSpecifications();
     }
 }

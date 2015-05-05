@@ -5,10 +5,6 @@ package beandefinitioninheritance;
  */
 public class Car {
 
-    public static enum CarType {
-        BUS, CAR, SPORT
-    }
-
     private CarType type;
     private String brand;
     private String model;
@@ -21,12 +17,10 @@ public class Car {
     }
 
     public void setBrand(String brand) {
-
         this.brand = brand;
     }
 
     public void setModel(String model) {
-
         this.model = model;
     }
 
@@ -34,6 +28,7 @@ public class Car {
         System.out.println("Type: " + getType());
         System.out.println("Brand: " + getBrand());
         System.out.println("Model: " + getModel());
+        System.out.print("\n");
     }
 
     public CarType getType() {

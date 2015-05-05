@@ -29,15 +29,15 @@ Purpose of using these holders is making configuration files independent of spec
  
  If we implement multiple lifecycle methods, spring runs these methods according to this order:
  
-1. The methods marked with @PostConstruct annotation
-2. afterPropertiesSet() method if class implements InitializingBean class
-3. The method defined with init-method in configuration file
+ * The methods marked with @PostConstruct annotation
+ * afterPropertiesSet() method if class implements InitializingBean class
+ * The method defined with init-method in configuration file
 
  Spring runs destruction methods according to this order:
  
-1. The methods marked with @PreDestroy annotation
-2. destroy() method if class implements DisposableBean class
-3. The method defined with destroy-method in configuration file
+ * The methods marked with @PreDestroy annotation
+ * destroy() method if class implements DisposableBean class
+ * The method defined with destroy-method in configuration file
 
 #### 13. Spring Bean Post Processor & @Required (beanpostprocessor)
 - The BeanPostProcessor interface defines callback methods that you can implement to provide your own instantiation logic.

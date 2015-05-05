@@ -23,6 +23,7 @@
         <module>beanlifecycle</module>
         <module>beanpostprocessor</module>
         <module>constants</module>
+        <module>beandefinitioninheritance</module>
     </modules>
 
     <dependencies>

@@ -42,3 +42,8 @@ Purpose of using these holders is making configuration files independent of spec
 #### 13. Spring Bean Post Processor & @Required (beanpostprocessor)
 - The BeanPostProcessor interface defines callback methods that you can implement to provide your own instantiation logic.
 - @Required annotation indicates that the affected bean property must be populated in XML configuration file at configuration time otherwise the container throws a BeanInitializationException exception.
+
+#### 14. Spring Bean Definition Inheritance (beandefinitioninheritance)
+- parent tag corresponds to 'extends' keyword in Java.
+- abstract = true, not possible to create object from this bean, other beans can extends it as well.
+- Spring bean definitions can extends any bean definition and override its property.

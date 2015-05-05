@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- parent tag corresponds to 'extends' keyword in Java -->
+    <!-- abstract = true, not possible to create object from this bean, because it's abstract -->
+    <bean id="car" class="beandefinitioninheritance.Car" abstract="true">
+        <property name="type" value="CAR"/>
+    </bean>
+
+    <bean id="clio" parent="car">
+        <property name="brand" value="Renault"/>
+        <property name="model" value="Clio"/>
+    </bean>
+
+    <bean id="fiesta" parent="car">
+        <property name="brand" value="Ford"/>
+        <property name="model" value="Fiesta"/>
+    </bean>
+
+    <!-- Spring bean definitions can extends any bean definition and override its property -->
+    <bean id="a5" parent="car">
+        <property name="brand" value="Audi"/>
+        <property name="model" value="A5"/>
+        <property name="type" value="SPORT"/>
+    </bean>
+
+</beans>

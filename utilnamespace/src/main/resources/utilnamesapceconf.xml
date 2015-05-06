@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- We've used bean definition inheritance by using this abstract bean -->
+    <bean id="calendar" class="utilnamespace.Calendar" abstract="true">
+        <property name="currentDay">
+            <util:constant static-field="utilnamespace.Day.WEDNESDAY"/>
+        </property>
+        <property name="currentYear">
+            <util:constant static-field="utilnamespace.Constants.CALENDAR_YEAR"/>
+        </property>
+    </bean>
+
+    <!-- This bean extends the bean above named calendar by using parent tag -->
+    <bean id="wallCalendar" class="utilnamespace.Calendar" parent="calendar">
+        <property name="name" value="Wall Calendar"/>
+        <property name="type" value="Astronomical Calendar"/>
+        <property name="months" ref="monthList"/>
+    </bean>
+
+    <!-- This bean extends the bean above named calendar by using parent tag -->
+    <!-- This bean uses property(type) value of the bean above named wallCalendar -->
+    <bean id="deskCalendar" class="utilnamespace.Calendar" parent="calendar">
+        <property name="name" value="Desk Calendar"/>
+        <!-- type value should have a getter method -->
+        <property name="type">
+            <util:property-path path="wallCalendar.type"/>
+        </property>
+        <property name="months" ref="monthList"/>
+    </bean>
+
+    <util:properties id="timeZoneProperties" location="timezone.properties"/>
+
+    <!-- This bean uses values in timezone.properties as property value -->
+    <bean id="time" class="utilnamespace.Time">
+        <property name="timeZone" ref="timeZoneProperties"/>
+    </bean>
+
+    <!-- We can use beans instead string values -->
+    <util:list id="monthList" list-class="java.util.ArrayList" value-type="java.lang.String">
+        <value>JANUARY</value>
+        <value>FEBRUARY</value>
+        <value>MARCH</value>
+        <value>APRIL</value>
+        <value>MAY</value>
+        <value>JUN</value>
+        <value>JULY</value>
+        <value>AUGUST</value>
+        <value>SEPTEMBER</value>
+        <value>OCTOBER</value>
+        <value>NOVEMBER</value>
+        <value>DECEMBER</value>
+    </util:list>
+
+
+    <util:map id="monthMap">
+        <entry key="01" value="JANUARY"/>
+    </util:map>
+
+    <util:set id="monthSet">
+        <value>JANUARY</value>
+    </util:set>
+
+</beans>

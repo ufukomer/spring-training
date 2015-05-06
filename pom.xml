@@ -24,6 +24,7 @@
         <module>beanpostprocessor</module>
         <module>constants</module>
         <module>beandefinitioninheritance</module>
+        <module>utilnamespace</module>
     </modules>
 
     <dependencies>

@@ -47,3 +47,8 @@ Purpose of using these holders is making configuration files independent of spec
 - parent tag corresponds to 'extends' keyword in Java.
 - abstract = true, not possible to create object from this bean, other beans can extends it as well.
 - Spring bean definitions can extends any bean definition and override its property.
+
+#### 15. Util Namespace
+- util:constant, injects static variables to objects(beans).
+- util:property-path, injects any property of any bean to another beans property.
+- util:properties, injects property files

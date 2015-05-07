@@ -16,7 +16,7 @@ public class Calendar {
     private String name;
 
     private ArrayList<String> months;
-    // Unused declarations
+    // Unused declarations, for showing the usage of util:map and util:set
     private Map<String, String> monthMap;
     private Set<String> monthSet;
 

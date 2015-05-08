@@ -48,7 +48,10 @@ Purpose of using these holders is making configuration files independent of spec
 - abstract = true, not possible to create object from this bean, other beans can extends it as well.
 - Spring bean definitions can extends any bean definition and override its property.
 
-#### 15. Util Namespace
+#### 15. Util Namespace (utilnamespace)
 - util:constant, injects static variables to objects(beans).
 - util:property-path, injects any property of any bean to another beans property.
 - util:properties, injects property files
+
+#### 16. Spring Expression Language
+It may not be possible to inject all values before runtime. The [Spring Expression Language](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/expressions.html "SpEL") is a powerful expression language that supports querying and manipulating an object graph at runtime.

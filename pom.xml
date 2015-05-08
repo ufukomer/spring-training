@@ -8,6 +8,17 @@
     <artifactId>spring-training</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <developers>
+        <developer>
+            <name>Ömer Ufuk Efendioğlu</name>
+            <email>ufukomer@hotmail.com</email>
+        </developer>
+        <developer>
+            <name>Semih Okan Pehlivan</name>
+        </developer>
+    </developers>
+
     <modules>
         <module>helloworld</module>
         <module>strategy</module>
@@ -25,6 +36,8 @@
         <module>constants</module>
         <module>beandefinitioninheritance</module>
         <module>utilnamespace</module>
+        <module>spel</module>
+        <module>strategyannotationconfiguration</module>
     </modules>
 
     <dependencies>

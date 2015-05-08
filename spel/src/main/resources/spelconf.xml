@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="city" class="spel.City">
+        <!-- This usage is for calling static and constant variables -->
+        <property name="name" value="#{T(spel.City).CITY}"/>
+        <property name="country" value="#{countries[0]}"/>
+        <!-- '?' prevents NullPointerException, not necessary -->
+        <property name="isCapitol" value="#{turkey.getName()?.toLowerCase() == 'turkey'}"/>
+        <property name="temperature" value="#{21}"/>
+
+    </bean>
+
+
+    <bean id="turkey" class="spel.Country">
+        <property name="name" value="#{'Turkey'}"/>
+        <!-- Country coordinates -->
+        <property name="e" value="#{coordination['E']}"/>
+        <property name="n" value="#{coordination['N']}"/>
+    </bean>
+
+    <bean id="italy" class="spel.Country">
+        <property name="name" value="#{'Italy'}"/>
+    </bean>
+
+    <!-- This set contains spel.Country beans -->
+    <util:set id="countries">
+        <ref bean="turkey"/>
+        <ref bean="italy"/>
+    </util:set>
+
+    <!-- We can get these properties from coordinates.properties file with SpEL as shown below -->
+    <util:properties id="coordination" location="coordinates.properties"/>
+
+    <!-- It is also possible t access system environment and system property variables -->
+
+</beans>

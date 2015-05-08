@@ -53,5 +53,8 @@ Purpose of using these holders is making configuration files independent of spec
 - util:property-path, injects any property of any bean to another beans property.
 - util:properties, injects property files
 
-#### 16. Spring Expression Language
+#### 16. Spring Expression Language (spel)
 It may not be possible to inject all values before runtime. The [Spring Expression Language](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/expressions.html "SpEL") is a powerful expression language that supports querying and manipulating an object graph at runtime.
+
+#### 17. Annotation Based Configuration (strategyannotationconfiguration)
+@Component, @Autowired, @Qualifier annotation definitions. Small sample code of Logger class.

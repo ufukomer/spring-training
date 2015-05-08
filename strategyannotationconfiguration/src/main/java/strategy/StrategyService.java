@@ -12,7 +12,7 @@ import static constants.Constants.TAG;
 /**
  * Created by Ufuk on 08-05-15.
  */
-@Component("strategyService")
+@Component("strategyService") // Injection by name
 public class StrategyService {
 
     @Autowired

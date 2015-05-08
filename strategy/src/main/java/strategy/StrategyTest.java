@@ -8,7 +8,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Created by Ufuk on 13-04-15.
  */
 public class StrategyTest {
-
    @Test
    public void strategy_test() {
        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("strategyconf.xml");

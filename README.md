@@ -56,6 +56,12 @@ Purpose of using these holders is making configuration files independent of spec
 #### 16. Spring Expression Language (spel)
 It may not be possible to inject all values before runtime. The [Spring Expression Language](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/expressions.html "SpEL") is a powerful expression language that supports querying and manipulating an object graph at runtime.
 
+Validation of an email address with SpEL and Regex: 
+
+```xml
+<property name="validEmail" 
+          value="#{user.email matches '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}'}"/>
+```
 #### 17. Annotation Based Configuration (strategyannotationconfiguration)
 - @Component, @Autowired, @Qualifier annotation definitions. 
 - Small sample code of Logger class.

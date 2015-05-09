@@ -38,6 +38,7 @@
         <module>utilnamespace</module>
         <module>spel</module>
         <module>strategyannotationconfiguration</module>
+        <module>javabasedconfiguration</module>
     </modules>
 
     <dependencies>

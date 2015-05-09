@@ -58,3 +58,6 @@ It may not be possible to inject all values before runtime. The [Spring Expressi
 
 #### 17. Annotation Based Configuration (strategyannotationconfiguration)
 @Component, @Autowired, @Qualifier annotation definitions. Small sample code of Logger class.
+
+#### 18. Java Based Configuration (javabasedconfiguration)
+[Java Based Configuration](http://www.tutorialspoint.com/spring/spring_java_based_configuration.htm "Tutorials Point"), provides us to create configuration files without using xml files.

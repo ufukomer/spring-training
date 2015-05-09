@@ -57,7 +57,8 @@ Purpose of using these holders is making configuration files independent of spec
 It may not be possible to inject all values before runtime. The [Spring Expression Language](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/expressions.html "SpEL") is a powerful expression language that supports querying and manipulating an object graph at runtime.
 
 #### 17. Annotation Based Configuration (strategyannotationconfiguration)
-@Component, @Autowired, @Qualifier annotation definitions. Small sample code of Logger class.
+- @Component, @Autowired, @Qualifier annotation definitions. 
+- Small sample code of Logger class.
 
 #### 18. Java Based Configuration (javabasedconfiguration)
 [Java Based Configuration](http://www.tutorialspoint.com/spring/spring_java_based_configuration.htm "Tutorials Point"), provides us to create configuration files without using xml files.

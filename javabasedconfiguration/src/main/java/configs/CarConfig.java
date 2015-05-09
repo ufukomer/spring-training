@@ -1,8 +1,6 @@
 package configs;
 
-import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 
@@ -14,7 +12,7 @@ import java.util.ArrayList;
 @Configuration
 @ComponentScan(basePackages = "javabasedconfiguration")
 @Import({SecurityConfig.class, AppConfig.class})
-@PropertySource("classpath:/tracks.properties")
+@PropertySource("classpath:/tracks.properties") // Inject these environment values into env object
 public class CarConfig {
 
     @Autowired

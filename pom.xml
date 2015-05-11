@@ -39,6 +39,7 @@
         <module>spel</module>
         <module>strategyannotationconfiguration</module>
         <module>javabasedconfiguration</module>
+        <module>datasource</module>
     </modules>
 
     <dependencies>

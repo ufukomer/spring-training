@@ -68,3 +68,7 @@ Validation of an email address with SpEL and Regex:
 
 #### 18. Java Based Configuration (javabasedconfiguration)
 [Java Based Configuration](http://www.tutorialspoint.com/spring/spring_java_based_configuration.htm "Tutorials Point"), provides us to create configuration files without using xml files.
+
+#### 19. Database Operations With JDBC (datasource)
+
+#### 20. Spring JdbcTemplate (jdbctemplate)

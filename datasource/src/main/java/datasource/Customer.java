@@ -1,7 +1,6 @@
 package datasource;
 
 /**
- * <p>This is our domain object</>
  * Created by Ufuk on 11-05-15.
  */
 public class Customer {

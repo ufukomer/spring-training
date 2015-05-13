@@ -12,7 +12,7 @@ import java.sql.SQLException;
 /**
  * Created by Ufuk on 11-05-15.
  */
-@Component("customer")
+@Component("dataSourceCustomer")
 public class CustomerDAOImpl implements CustomerDAO {
 
     @Autowired
@@ -33,7 +33,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 
             while (resultSet.next()) {
                 customer = new Customer();
-                customer.setId(resultSet.getLong("id"));
+                customer.setId(resultSet.getInt("id"));
                 customer.setFirstName(resultSet.getString("firstName"));
                 customer.setLastName(resultSet.getString("lastName"));
                 customer.setNumber(resultSet.getInt("number"));
@@ -53,7 +53,7 @@ public class CustomerDAOImpl implements CustomerDAO {
         return customer;
     }
 
-    public void saveCustomer() {
+    public void saveCustomer(Customer customer) {
         // TODO: Write insert operation
     }
 }

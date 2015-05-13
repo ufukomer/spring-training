@@ -7,8 +7,25 @@ public class Customer {
 
     private String firstName;
     private String lastName;
-    private long id;
+    private int id;
     private int number;
+
+    public Customer() {
+    }
+
+    public Customer(String firstName, String lastName, int number) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.number = number;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public int getNumber() {
         return number;
@@ -16,15 +33,6 @@ public class Customer {
 
     public void setNumber(int number) {
         this.number = number;
-    }
-
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getFirstName() {

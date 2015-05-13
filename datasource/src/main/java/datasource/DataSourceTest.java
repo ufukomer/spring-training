@@ -11,7 +11,7 @@ public class DataSourceTest {
     @Test
     public void data_source_test() {
         ApplicationContext context = new ClassPathXmlApplicationContext("datasourceconf.xml");
-        CustomerDAOImpl customer = context.getBean("customer", CustomerDAOImpl.class);
+        CustomerDAOImpl customer = context.getBean("dataSourceCustomer", CustomerDAOImpl.class);
         System.out.println(customer.getCustomerByName("Omer"));
     }
 }

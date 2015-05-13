@@ -70,5 +70,6 @@ Validation of an email address with SpEL and Regex:
 [Java Based Configuration](http://www.tutorialspoint.com/spring/spring_java_based_configuration.htm "Tutorials Point"), provides us to create configuration files without using xml files.
 
 #### 19. Database Operations With JDBC (datasource)
+- Spring JdbcTemplate (jdbctemplate): Created JdbcTemplate object can be used for multiple SQL operations. Also this JdbcTemplate object can be shared between threads (threadsafe).
+- [DataSource](http://docs.oracle.com/javase/7/docs/api/javax/sql/DataSource.html, "Oracle Documentation"), HSQL (datasource): HSQL is a embedded database, we can also use H2 or DERBY instead.
 
-#### 20. Spring JdbcTemplate (jdbctemplate)

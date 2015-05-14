@@ -70,6 +70,11 @@ Validation of an email address with SpEL and Regex:
 [Java Based Configuration](http://www.tutorialspoint.com/spring/spring_java_based_configuration.htm "Tutorials Point"), provides us to create configuration files without using xml files.
 
 #### 19. Database Operations With JDBC (datasource)
-- Spring JdbcTemplate (jdbctemplate): Created JdbcTemplate object can be used for multiple SQL operations. Also this JdbcTemplate object can be shared between threads (threadsafe).
-- [DataSource](http://docs.oracle.com/javase/7/docs/api/javax/sql/DataSource.html, "Oracle Documentation"), HSQL (datasource): HSQL is a embedded database, we can also use H2 or DERBY instead.
-
+- Spring JdbcTemplate (jdbctemplate)
+    * Created JdbcTemplate object can be used for multiple SQL operations. Also this JdbcTemplate object can be shared between threads (threadsafe).
+- DataSource, HSQL (datasource), Callback Class
+    * HSQL is a embedded database, we can also use H2 or DERBY instead.
+    * CustomerRowMapper implements RowMapper interface, CustomerExtractor implements ResultSetExtractor so that they can create customer object by using ResultSet object. These are called **Callback Class**.
+    * If we don't need any return value from a callback class so we can use RowCallbackHandler.
+    
+    These packages works independent except Customer.java class and resource files.

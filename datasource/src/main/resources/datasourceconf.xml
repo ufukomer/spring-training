@@ -6,7 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
     <context:annotation-config/>
-    <context:component-scan base-package="datasource,jdbctemplate"/>
+    <context:component-scan base-package="datasource,jdbctemplate,namedparameterjdbctemplate"/>
 
     <!-- Spring creates database system via these scripts by using ResourceDatabasePopulator -->
     <bean id="populator" class="org.springframework.jdbc.datasource.init.ResourceDatabasePopulator">
@@ -30,8 +30,21 @@
         <jdbc:script location="scripts/data.sql"/>
     </jdbc:embedded-database>-->
 
-    <bean id="template" class="org.springframework.jdbc.core.JdbcTemplate">
+    <!-- JdbcTemplate -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg type="javax.sql.DataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- NamedParameterJdbcTemplate -->
+    <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg type="javax.sql.DataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- SimpleJdbcInsert -->
+    <bean class="org.springframework.jdbc.core.simple.SimpleJdbcInsert">
         <constructor-arg name="dataSource" ref="dataSource"/>
+        <property name="tableName" value="customer"/>
+        <property name="generatedKeyName" value="id"/>
     </bean>
 
 </beans>

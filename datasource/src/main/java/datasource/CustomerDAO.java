@@ -5,5 +5,4 @@ package datasource;
  */
 public interface CustomerDAO {
     Object getCustomerByName(String name);
-    void saveCustomer(Customer customer);
 }

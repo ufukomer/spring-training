@@ -16,4 +16,6 @@ public interface CustomerDAO {
     List getCustomerList();
 
     void writeCustomerToFile(String name);
+
+    int[] deleteCustomerByName(List<Customer> customerList, String name);
 }

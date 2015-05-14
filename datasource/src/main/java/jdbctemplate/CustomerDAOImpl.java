@@ -2,6 +2,7 @@ package jdbctemplate;
 
 import datasource.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowCallbackHandler;
@@ -11,6 +12,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -96,5 +98,26 @@ public class CustomerDAOImpl implements CustomerDAO {
 
         String sql = "SELECT * FROM customer WHERE firstName=?";
         jdbcTemplate.query(sql, handler, name);
+    }
+
+    @Override
+    public int[] deleteCustomerByName(List<Customer> customerList, String name) {
+
+        String sql = "DELETE FROM customer WHERE firstName = ?";
+
+        int[] deleteCounts = jdbcTemplate.batchUpdate(sql, new BatchPreparedStatementSetter() {
+                    @Override
+                    public void setValues(PreparedStatement ps, int i) throws SQLException {
+                        // ParameterIndex is ..th '?' in SQL string
+                        ps.setString(1, "Okan");
+                    }
+
+                    @Override
+                    public int getBatchSize() {
+                        return customerList.size();
+                    }
+                }
+        );
+                return deleteCounts;
     }
 }

@@ -77,6 +77,6 @@ Validation of an email address with SpEL and Regex:
     * CustomerRowMapper implements RowMapper interface, CustomerExtractor implements ResultSetExtractor so that they can create customer object by using ResultSet object. These are called **Callback Class**.
     * If we don't need any return value from a callback class so we can use RowCallbackHandler.
 - NamedParameterJdbcTemplate, SimpleJdbcInsert (namedparameterjdbctemplate)
-    * Exemplifies usage of SqlParameterSource interface with SimpleJdbcInsert and NamedParameterJdbcTemplate classes.
+    * Exemplifies usage of **SqlParameterSource** interface with SimpleJdbcInsert and NamedParameterJdbcTemplate classes.
     
     *P.S. These packages are self-contained, their only dependency is Customer.java class and resource files.*

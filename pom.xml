@@ -4,6 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <!-- Java Compiler and Language level-->
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <groupId>spring</groupId>
     <artifactId>spring-training</artifactId>
     <packaging>pom</packaging>
@@ -40,6 +55,7 @@
         <module>strategyannotationconfiguration</module>
         <module>javabasedconfiguration</module>
         <module>datasource</module>
+        <module>mysql</module>
     </modules>
 
     <dependencies>
@@ -54,4 +70,5 @@
             <version>4.1.6.RELEASE</version>
         </dependency>
     </dependencies>
+
 </project>

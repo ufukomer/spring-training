@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+    <!-- SingleConnectionDataSource, allows only one connection object usage -->
+    <!-- DriverManagerDataSource creates new connection for each connection request -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value="password"/>
+    </bean>
+
+    <!-- That bean is also a DataSource -->
+    <bean id="connectionPool" class="org.apache.commons.dbcp2.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value="password"/>
+        <property name="initialSize" value="10"/>
+        <!-- Other parameters described in README.md -->
+    </bean>
+
+    <!-- This bean is currently using connectionPool as DataSource -->
+    <bean id="employeeDaoImpl" class="mysql.EmployeeDAOImpl">
+        <property name="dataSource" ref="connectionPool"/>
+    </bean>
+
+</beans>

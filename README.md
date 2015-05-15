@@ -72,6 +72,7 @@ Validation of an email address with SpEL and Regex:
 #### 19. Database Operations With JDBC (datasource)
 - Spring JdbcTemplate (jdbctemplate)
     * Created JdbcTemplate object can be used for multiple SQL operations. Also this JdbcTemplate object can be shared between threads (threadsafe).
+    * [Batch Update](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html#batchUpdate-java.lang.String-org.springframework.jdbc.core.BatchPreparedStatementSetter-, "Spring Documentaion"): Issue multiple update statements on a single PreparedStatement, using batch updates and a BatchPreparedStatementSetter to set values.
 - DataSource, HSQL (datasource), Callback Class
     * HSQL is a embedded database, we can also use H2 or DERBY instead.
     * CustomerRowMapper implements RowMapper interface, CustomerExtractor implements ResultSetExtractor so that they can create customer object by using ResultSet object. These are called **Callback Class**.
@@ -80,3 +81,7 @@ Validation of an email address with SpEL and Regex:
     * Exemplifies usage of **SqlParameterSource** interface with SimpleJdbcInsert and NamedParameterJdbcTemplate classes.
     
     *P.S. These packages are self-contained, their only dependency is Customer.java class and resource files.*
+
+#### 20. Connection Pool, MySQL Connection (mysql)
+- DriverManagerDataSource creates new connection for each connection request. SingleConnectionDataSource allows only one connection object usage, thus this class is better for testing, but can't serve multiple users. Both of them are not recommended for real applications.
+- Connection Pool contains multiple connections thus it provides faster service to users. Open source tools often used such as [DBCP](http://commons.apache.org/proper/commons-dbcp/) or [c3po](http://www.mchange.com/projects/c3p0/) for that kind configurations.

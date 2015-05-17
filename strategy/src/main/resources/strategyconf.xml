@@ -9,5 +9,5 @@
 
        <bean id="strategy" class="strategy.OperationMultiply"/>
        <!--<bean id="strategy" class="strategy.OperationAdd"/>-->
-       <!--<bean id="strategy" class="strategy.OperationSubstract"/>-->
+       <!--<bean id="strategy" class="strategy.OperationSubtract"/>-->
 </beans>

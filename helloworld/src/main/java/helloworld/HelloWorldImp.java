@@ -5,6 +5,7 @@ package helloworld;
  */
 public class HelloWorldImp implements HelloWorldService {
 
+    @Override
     public void getMessage() {
         System.out.println("Hello World!");
     }

@@ -16,13 +16,13 @@ public class Car {
 
     private final Logger logger = Logger.getLogger(TAG(this));
 
+    @Autowired
+    private Radio radio;
+
     // Not necessary
     public Car() {
         logger.log(Level.INFO, "constructor invoked");
     }
-
-    @Autowired
-    private Radio radio;
 
     public void playRadio() {
         radio.play();

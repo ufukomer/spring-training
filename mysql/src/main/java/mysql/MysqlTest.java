@@ -13,10 +13,16 @@ public class MysqlTest {
     @Test
     public void mysql_test() {
 
-        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("mysqlconf.xml");
-        EmployeeDAOImpl employee = context.getBean("employeeDaoImpl", EmployeeDAOImpl.class);
+        ConfigurableApplicationContext context =
+                new ClassPathXmlApplicationContext("mysqlconf.xml");
+        EmployeeDAOImpl employeeDaoImpl = context.getBean("employeeDaoImpl", EmployeeDAOImpl.class);
 
-        List<Employee> list = employee.getEmployeeList();
+        boolean isAdded = employeeDaoImpl.addEmployee(
+                new Employee(3, "Alan", "Turing", 41));
+
+        System.out.println((isAdded ? "Insert successful" : "Insert failed!"));
+
+        List<Employee> list = employeeDaoImpl.getEmployeeList();
         System.out.println(list);
     }
 }

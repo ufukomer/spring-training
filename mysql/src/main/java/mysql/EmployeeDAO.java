@@ -10,4 +10,8 @@ public interface EmployeeDAO {
     List<Employee> getEmployeeList();
 
     Employee getEmployeeByName(String name);
+
+    boolean addEmployee(Employee employee);
+
+    Employee getEmployeeById(int id);
 }

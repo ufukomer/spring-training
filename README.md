@@ -85,3 +85,7 @@ Validation of an email address with SpEL and Regex:
 #### 20. Connection Pool, MySQL Connection (mysql)
 - DriverManagerDataSource creates new connection for each connection request. SingleConnectionDataSource allows only one connection object usage, thus this class is better for testing, but can't serve multiple users. Both of them are not recommended for real applications.
 - Connection Pool contains multiple connections thus it provides faster service to users. Open source tools often used such as [DBCP](http://commons.apache.org/proper/commons-dbcp/) or [c3po](http://www.mchange.com/projects/c3p0/) for that kind configurations.
+
+#### 21. Hibernate (hibernate)
+
+[Hibernate ORM](http://hibernate.org/orm/) enables developers to more easily write applications whose data outlives the application process. As an Object/Relational Mapping (ORM) framework, Hibernate is concerned with data persistence as it applies to relational databases (via JDBC).

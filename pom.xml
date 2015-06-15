@@ -47,6 +47,7 @@
         <module>datasource</module>
         <module>mysql</module>
         <module>hibernate</module>
+        <module>transactionmanagement</module>
     </modules>
 
     <properties>

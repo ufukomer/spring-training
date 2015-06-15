@@ -89,3 +89,19 @@ Validation of an email address with SpEL and Regex:
 #### 21. Hibernate (hibernate)
 
 [Hibernate ORM](http://hibernate.org/orm/) enables developers to more easily write applications whose data outlives the application process. As an Object/Relational Mapping (ORM) framework, Hibernate is concerned with data persistence as it applies to relational databases (via JDBC).
+
+#### 22. Spring Transaction Management - (INCOMPLETE)
+
+- [Transaction](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/transaction.html) management by using @Transactional annotation.
+
+    - propagation: Defines how transactions relate to each other ([_Enum Constant Summary_](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/transaction/annotation/Propagation.html)).
+
+    - isolation: Defines data contract between transactions ([_Enum Constant Summary_](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/transaction/annotation/Isolation.html))
+
+    - timeout: How long this transaction runs before timing out and being rolled back automatically.
+
+    - readOnly: A read-only transaction can be used when your code reads but does not modify data, that means it only uses SQL SELECT command (true or false).
+
+    - rollbackFor: Indicates which exception types must cause a transaction rollback.
+
+    - noRollBackFor: Indicates which exception types must not cause a transaction rollback.

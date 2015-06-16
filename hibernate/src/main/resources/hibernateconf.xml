@@ -35,7 +35,10 @@
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <!-- Hibernate saves all used SQL commands to log file and prints logs to the screen -->
                 <prop key="hibernate.show_sql">true</prop>
+                <!-- Hibernate automatically creates the necessary tables -->
+                <prop key="hbm2ddl.auto">create</prop>
             </props>
         </property>
     </bean>

@@ -90,6 +90,14 @@ Validation of an email address with SpEL and Regex:
 
 [Hibernate ORM](http://hibernate.org/orm/) enables developers to more easily write applications whose data outlives the application process. As an Object/Relational Mapping (ORM) framework, Hibernate is concerned with data persistence as it applies to relational databases (via JDBC).
 
+@Entity, specifies that class can be saved to database.
+
+@Table, specifies the name of table that our data will be saved in it. If @Table annotation is not used then our class name would be the table name.
+
+@Id, specifies that our value is the primary key.
+
+@GeneratedValue, corresponds to AUTO_INCREMENT keyword of MySQL. The value with @GeneratedValue annotation shouldn't be assigned by developer.
+
 #### 22. Spring Transaction Management - (INCOMPLETE)
 
 - [Transaction](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/transaction.html) management by using @Transactional annotation.

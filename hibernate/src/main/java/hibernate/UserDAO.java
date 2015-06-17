@@ -9,6 +9,8 @@ public interface UserDAO {
 
     void insertUser(User user);
 
+    void deleteUser(String username);
+
     User getUser(int userId);
 
     User getUser(String username);

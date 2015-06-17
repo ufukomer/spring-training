@@ -22,6 +22,14 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
+    public void deleteUser(String username) {
+        Query query = sessionFactory.getCurrentSession()
+                .createQuery("DELETE User where username = :username");
+        query.setParameter("username", username);
+        query.executeUpdate();
+    }
+
+    @Override
     public User getUser(int userId) {
         return (User) sessionFactory.getCurrentSession().get(User.class, userId);
     }
@@ -29,8 +37,8 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public User getUser(String username) {
         String hql = "FROM User u WHERE u.username = :username";
-        Query query = sessionFactory.getCurrentSession().
-                createQuery(hql);
+        Query query = sessionFactory.getCurrentSession()
+                .createQuery(hql);
         query.setParameter("username", username);
         return (User) query.list().get(0);
     }

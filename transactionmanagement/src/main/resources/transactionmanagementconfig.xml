@@ -10,42 +10,46 @@
        http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-       <!-- Proxies are automatically to be created for the relevant annotated beans -->
-       <!-- Alternative: context:annotation-config -->
-       <tx:annotation-driven transaction-manager="transactionManager"/>
+    <!-- Proxies are automatically to be created for the relevant annotated beans -->
+    <!-- Alternative: context:annotation-config -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 
-       <context:component-scan base-package="transactional"/>
+    <context:component-scan base-package="transactional"/>
 
-       <bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
-              <property name="sessionFactory" ref="sessionFactory"/>
-       </bean>
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
 
-       <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-              <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-              <property name="url" value="jdbc:mysql://localhost:3306/test"/>
-              <property name="username" value="root"/>
-              <property name="password" value=""/>
-       </bean>
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value=""/>
+    </bean>
 
-       <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-              <property name="dataSource" ref="dataSource"/>
-              <property name="packagesToScan" value="transactional"/>
-              <property name="annotatedClasses">
-                     <list>
-                            <value>transactional.User</value>
-                     </list>
-              </property>
-              <property name="hibernateProperties">
-                     <props>
-                            <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
-                            <prop key="hibernate.show_sql">true</prop>
-                     </props>
-              </property>
-       </bean>
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="transactional"/>
+        <property name="annotatedClasses">
+            <list>
+                <value>transactional.User</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
 
-       <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager"
-             p:sessionFactory-ref="sessionFactory"/>
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+          p:sessionFactory-ref="sessionFactory"/>
 
-       <bean id="userDAOImpl" class="transactional.UserDAOImpl"/>
+    <bean id="userDAOImpl" class="transactional.UserDAOImpl"/>
 
+    <!-- In some cases @Transactional annotation does not work in hibernate without exception translation
+         because hibernate doesn't throw exception for some situations -->
+    <!-- This definition is essential for exception translation -->
+    <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
 </beans>

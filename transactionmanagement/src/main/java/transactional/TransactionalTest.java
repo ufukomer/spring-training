@@ -14,7 +14,7 @@ public class TransactionalTest {
                 new ClassPathXmlApplicationContext("transactionmanagementconfig.xml");
         UserManager manager = context.getBean("userManager", UserManager.class);
 
-        manager.deleteUser(20, "bickford");
+        manager.deleteUser(11, "perike");
         //manager.deleteUser("ufukomer");
 
         //System.out.println(manager.getUsers());

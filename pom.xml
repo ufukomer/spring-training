@@ -48,6 +48,7 @@
         <module>mysql</module>
         <module>hibernate</module>
         <module>transactionmanagement</module>
+        <module>aopperformancemonitoring</module>
     </modules>
 
     <properties>

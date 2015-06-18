@@ -96,7 +96,7 @@ Validation of an email address with SpEL and Regex:
 
 @Id, specifies that our value is the primary key.
 
-@GeneratedValue, corresponds to AUTO_INCREMENT keyword of MySQL. The value with @GeneratedValue annotation shouldn't be assigned by developer.
+@GeneratedValue, corresponds to AUTO_INCREMENT keyword of MySQL. The value with this annotation shouldn't be assigned by developer.
 
 #### 22. Spring Transaction Management - (INCOMPLETE)
 

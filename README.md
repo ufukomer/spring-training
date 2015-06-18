@@ -115,4 +115,4 @@ Validation of an email address with SpEL and Regex:
     - noRollBackFor: Indicates which exception types must not cause a transaction rollback.
     
 #### 23. Spring AOP and AspectJ (aopperformancemonitoring)
-Exemplifies the creation of Around Advice by using @Aspect, @Around annotations and XML Configuration. 
+Exemplifies the creation of Around Advice by using @Aspect, @Around annotations and XML configuration. 

@@ -51,6 +51,7 @@
         <module>aopperformancemonitoring</module>
         <module>aspectjbasedaop</module>
         <module>pointcutdefinition</module>
+        <module>declareparents</module>
     </modules>
 
     <properties>

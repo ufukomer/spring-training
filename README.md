@@ -130,4 +130,6 @@ _Go to [reference](http://www.tutorialspoint.com/spring/aspectj_based_aop_appoac
 - Usage of 'execution' and 'within' of AspectJ pointcut expression language.
 - Two different usage of target's parameter in advice with 'args'.
 
-#### 26. Mixin, @DeclareParents (declareparents)
+#### 26. Inter-type Declarations (declareparents)
+- Mixin
+- @DeclareParent

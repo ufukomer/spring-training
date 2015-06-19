@@ -117,7 +117,7 @@ Validation of an email address with SpEL and Regex:
 #### 23. Spring AOP and AspectJ (aopperformancemonitoring)
 Exemplifies the creation of Around Advice by using @Aspect, @Around annotations and XML configuration. 
 
-#### 24. @AspectJ Based AOP with Spring
+#### 24. @AspectJ Based AOP with Spring (aspectjbasedaop)
 This example consist of @Pointcut, @Before, @After, @AfterReturning, @AfterThrowing.
 
 _Go to [reference](http://www.tutorialspoint.com/spring/aspectj_based_aop_appoach.htm) for more detail._

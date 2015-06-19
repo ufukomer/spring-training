@@ -121,3 +121,9 @@ Exemplifies the creation of Around Advice by using @Aspect, @Around annotations 
 This example consist of @Pointcut, @Before, @After, @AfterReturning, @AfterThrowing.
 
 _Go to [reference](http://www.tutorialspoint.com/spring/aspectj_based_aop_appoach.htm) for more detail._
+
+#### 25. Pointcut Definitions (pointcutdefinition)
+- Combining the named pointcuts with '&&', '||' and '!' symbols.
+- Getting pointcuts from external class.
+- Usage of 'execution' and 'within' of AspectJ pointcut expression language.
+- Two different usage of target's parameter in advice with 'args'.

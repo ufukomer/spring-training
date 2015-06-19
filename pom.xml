@@ -50,7 +50,7 @@
         <module>transactionmanagement</module>
         <module>aopperformancemonitoring</module>
         <module>aspectjbasedaop</module>
-        <module>pointcut</module>
+        <module>pointcutdefinition</module>
     </modules>
 
     <properties>

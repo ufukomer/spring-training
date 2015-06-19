@@ -49,6 +49,8 @@
         <module>hibernate</module>
         <module>transactionmanagement</module>
         <module>aopperformancemonitoring</module>
+        <module>aspectjbasedaop</module>
+        <module>pointcut</module>
     </modules>
 
     <properties>

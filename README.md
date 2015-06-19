@@ -129,6 +129,7 @@ _Go to [reference](http://www.tutorialspoint.com/spring/aspectj_based_aop_appoac
 - Getting pointcuts from external class.
 - Usage of 'execution' and 'within' of AspectJ pointcut expression language.
 - Two different usage of target's parameter in advice with 'args'.
+- Run aspects in order with @Order annotation.
 
 #### 26. Inter-type Declarations (declareparents)
 - Mixin

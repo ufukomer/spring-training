@@ -4,12 +4,14 @@ import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
 import pointcutdefinition.bean.Student;
 
 /**
  * Created by Ufuk on 19-06-15.
  */
 @Aspect
+@Order(2)
 public class ReturnValueLogger {
 
     @Pointcut("execution(* pointcutdefinition.service.StudentService.changeStudentName(..))")

@@ -1,8 +1,10 @@
 # Spring Training
 #### 1. Hello World (helloworld)
+Basic hello world application with XML based configuration. 
 #### 2. Strategy Pattern (strategy)
-Spring dependency injection. 
+Spring dependency injection with XML based configuration. 
 #### 3. List Injection (listinjection)
+List injection with XML based configuration.
 #### 4. Depends-On (dependson)
 Define object initialization order with depends-on element.
 #### 5. Bean Scope (beanscope)

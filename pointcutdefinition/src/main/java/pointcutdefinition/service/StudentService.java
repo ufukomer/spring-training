@@ -2,7 +2,7 @@ package pointcutdefinition.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pointcutdefinition.bean.Student;
+import pointcutdefinition.domain.Student;
 import pointcutdefinition.dao.StudentDAO;
 
 /**

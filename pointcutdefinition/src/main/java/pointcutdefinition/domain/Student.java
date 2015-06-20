@@ -1,4 +1,4 @@
-package pointcutdefinition.bean;
+package pointcutdefinition.domain;
 
 /**
  * Created by Ufuk on 19-06-15.

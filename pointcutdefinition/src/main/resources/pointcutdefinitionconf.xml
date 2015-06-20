@@ -14,7 +14,7 @@
 
     <bean id="studentDAO" class="pointcutdefinition.dao.impl.StudentDAOImpl"/>
 
-    <bean id="student" class="pointcutdefinition.bean.Student">
+    <bean id="student" class="pointcutdefinition.domain.Student">
         <property name="name" value="Ufuk"/>
         <property name="age" value="21"/>
     </bean>

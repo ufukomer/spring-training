@@ -5,7 +5,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.core.annotation.Order;
-import pointcutdefinition.bean.Student;
+import pointcutdefinition.domain.Student;
 
 /**
  * Created by Ufuk on 19-06-15.

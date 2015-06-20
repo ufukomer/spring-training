@@ -3,7 +3,7 @@ package pointcutdefinition;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import pointcutdefinition.bean.Student;
+import pointcutdefinition.domain.Student;
 import pointcutdefinition.service.StudentService;
 
 /**

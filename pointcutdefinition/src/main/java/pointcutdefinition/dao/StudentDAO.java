@@ -1,6 +1,6 @@
 package pointcutdefinition.dao;
 
-import pointcutdefinition.bean.Student;
+import pointcutdefinition.domain.Student;
 
 /**
  * Created by Ufuk on 19-06-15.

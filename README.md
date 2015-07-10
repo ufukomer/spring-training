@@ -134,3 +134,14 @@ _Go to [reference](http://www.tutorialspoint.com/spring/aspectj_based_aop_appoac
 #### 26. Inter-type Declarations (declareparents)
 - Mixin
 - @DeclareParent
+
+#### 27. Spring MVC - Hello World (mvchelloworld)
+Spring MVC - 101, introduction to Spring MVC.
+#### 28. Spring MVC - Employee Registration (mvcexample)
+- Spring MVC
+- Hibernate 
+- Validation-api: exception handling
+
+_Note: This module consist of java based configuration, namely xml files haven't been used. It also contain redirection in jsp._
+
+_Go to [reference](http://websystique.com/springmvc/spring-4-mvc-and-hibernate4-integration-example-using-annotations/) for more detail._

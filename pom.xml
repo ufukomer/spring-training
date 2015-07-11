@@ -39,6 +39,7 @@
         <module>declareparents</module>
         <module>mvchelloworld</module>
         <module>mvcexample</module>
+        <module>loginform</module>
     </modules>
 
     <properties>

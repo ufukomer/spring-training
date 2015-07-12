@@ -100,7 +100,7 @@ Validation of an email address with SpEL and Regex:
 
 @GeneratedValue, corresponds to AUTO_INCREMENT keyword of MySQL. The value with this annotation shouldn't be assigned by developer.
 
-#### 22. Spring Transaction Management - (INCOMPLETE)
+#### 22. Spring Transaction Management - (transactionmanagement, INCOMPLETE)
 
 - [Transaction](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/transaction.html) management by using @Transactional annotation.
 
@@ -147,3 +147,5 @@ _Note: This module consist of java based configuration, namely xml files haven't
 _Go to [reference](http://websystique.com/springmvc/spring-4-mvc-and-hibernate4-integration-example-using-annotations/) for more detail._
 #### 29. Spring Security (loginform)
 #### 30. Spring REST - XML Example (resthelloworld)
+#### 31. Spring REST - GET, POS, DELETE, PUT Methods (springrest, INCOMPLETE)
+_// TODO: Use database to change, update, or get as json and xml media types. Show status codes and @ResponseStatus annotation. Exemplify the exception handling with @ControllerAdvice annotation._

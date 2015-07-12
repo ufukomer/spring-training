@@ -146,3 +146,4 @@ _Note: This module consist of java based configuration, namely xml files haven't
 
 _Go to [reference](http://websystique.com/springmvc/spring-4-mvc-and-hibernate4-integration-example-using-annotations/) for more detail._
 #### 29. Spring Security (loginform)
+#### 30. Spring REST - XML Example (resthelloworld)

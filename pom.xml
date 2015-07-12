@@ -40,6 +40,8 @@
         <module>mvchelloworld</module>
         <module>mvcexample</module>
         <module>loginform</module>
+        <module>resthelloworld</module>
+        <module>springrest</module>
     </modules>
 
     <properties>

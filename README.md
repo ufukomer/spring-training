@@ -149,3 +149,4 @@ _Go to [reference](http://websystique.com/springmvc/spring-4-mvc-and-hibernate4-
 #### 30. Spring REST - XML Example (resthelloworld)
 #### 31. Spring REST - GET, POS, DELETE, PUT Methods (springrest, INCOMPLETE)
 _// TODO: Use database to change, update, or get as json and xml media types. Show status codes and @ResponseStatus annotation. Exemplify the exception handling with @ControllerAdvice annotation._
+#### 32. RMI Service Exporter (rmiserviceexporter)

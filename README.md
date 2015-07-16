@@ -149,7 +149,7 @@ _Go to [reference](http://websystique.com/springmvc/spring-4-mvc-and-hibernate4-
 #### 30. Spring REST - XML Example (resthelloworld)
 #### 31. Spring REST - GET, POS, DELETE, PUT Methods (springrest, INCOMPLETE)
 _// TODO: Use database to change, update, or get as json and xml media types. Show status codes and @ResponseStatus annotation. Exemplify the exception handling with @ControllerAdvice annotation._
-#### 32. RMI Service Exporter (rmiserviceexporter)
+#### 32. Spring Remoting - RMI Service Exporter (rmiserviceexporter)
 [Remote Method Invocation (RMI)](http://www.oracle.com/technetwork/articles/javaee/index-jsp-136424.html): Java Remote Method Invocation (Java RMI) enables the programmer to create distributed Java technology-based to Java technology-based applications, in which the methods of remote Java objects can be invoked from other Java virtual machines*, possibly on different hosts. RMI uses object serialization to marshal and unmarshal parameters and does not truncate types, supporting true object-oriented polymorphism.
 
 RMI Service Exporter provides that calling one hosts' method from another host for short.

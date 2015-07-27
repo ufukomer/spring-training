@@ -22,7 +22,7 @@ public class StudentEndpoint {
     // @PayloadRoot marks an endpoint method as the handler for incoming request
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getStudentRequest")
     @ResponsePayload // Bounds the method return type to the response payload
-    public GetStudentResponse getCountry(@RequestPayload // Bounds the method parameter to the request payload
+    public GetStudentResponse getStudent(@RequestPayload // Bounds the method parameter to the request payload
                                                  GetStudentRequest request) {
         GetStudentResponse response = new GetStudentResponse();
         response.setStudent(studentUtility.getStudent(request.getStudentId()));

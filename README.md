@@ -153,3 +153,21 @@ _// TODO: Use database to change, update, or get as json and xml media types. Sh
 [Remote Method Invocation (RMI)](http://www.oracle.com/technetwork/articles/javaee/index-jsp-136424.html): Java Remote Method Invocation (Java RMI) enables the programmer to create distributed Java technology-based to Java technology-based applications, in which the methods of remote Java objects can be invoked from other Java virtual machines*, possibly on different hosts. RMI uses object serialization to marshal and unmarshal parameters and does not truncate types, supporting true object-oriented polymorphism.
 
 RMI Service Exporter provides that calling one hosts' method from another host for short.
+
+#### 33. Spring Web Service (studentws, studentwsclient)
+- Server side
+    - @EnableWs 
+    - WsConfigurerAdapter 
+    - DefaultWsdl11Definition 
+    - XsdSchema
+    - MessageDispatcherServlet
+    - @Endpoint 
+    - @PayloadRoot 
+    - @ResponsePayload 
+    - @RequestPayload 
+
+- Client side
+    - Jaxb2Marshaller
+    - WebServiceGatewaySupport  
+    
+_Go to [reference](http://www.concretepage.com/spring-4/spring-4-soap-web-service-producer-consumer-example-with-tomcat) for more detail._

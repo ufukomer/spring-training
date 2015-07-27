@@ -43,6 +43,8 @@
         <module>resthelloworld</module>
         <module>springrest</module>
         <module>rmiserviceexporter</module>
+        <module>studentws</module>
+        <module>studentwsclient</module>
     </modules>
 
     <properties>

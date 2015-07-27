@@ -155,7 +155,7 @@ _// TODO: Use database to change, update, or get as json and xml media types. Sh
 RMI Service Exporter provides that calling one hosts' method from another host for short.
 
 #### 33. Spring Web Service (studentws, studentwsclient)
-- Server side
+- Server side (studentws)
     - @EnableWs 
     - WsConfigurerAdapter 
     - DefaultWsdl11Definition 
@@ -166,7 +166,7 @@ RMI Service Exporter provides that calling one hosts' method from another host f
     - @ResponsePayload 
     - @RequestPayload 
 
-- Client side
+- Client side (studentwsclient)
     - Jaxb2Marshaller
     - WebServiceGatewaySupport  
     

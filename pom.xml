@@ -45,6 +45,7 @@
         <module>rmiserviceexporter</module>
         <module>studentws</module>
         <module>studentwsclient</module>
+        <module>taskscheduling</module>
     </modules>
 
     <properties>

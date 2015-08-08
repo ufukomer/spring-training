@@ -46,6 +46,7 @@
         <module>studentws</module>
         <module>studentwsclient</module>
         <module>taskscheduling</module>
+        <module>email</module>
     </modules>
 
     <properties>

@@ -187,6 +187,6 @@ _Go to [reference](http://www.concretepage.com/spring-4/spring-4-soap-web-servic
     - the method which is annotated with @Scheduler must return void and must not have any parameters.
 - Asynchronous Execution via @Async
     - it must be applied to public methods only.
-    - self invocation – calling the async method from within the same class – won’t work.
+    - self invocation - calling the async method from within the same class - won't work.
  
  _Go to references([1](http://websystique.com/spring/spring-job-scheduling-with-scheduled-enablescheduling-annotations/), [2](https://pamlesleylu.wordpress.com/2013/08/06/sample-usage-javas-future-and-springs-async/)) for more detail._

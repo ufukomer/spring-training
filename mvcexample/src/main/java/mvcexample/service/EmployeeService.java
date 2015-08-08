@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface EmployeeService {
 
-    void saveEmployee(Employee employee);
+    Employee saveEmployee(Employee employee);
 
     List<Employee> findAllEmployees();
 

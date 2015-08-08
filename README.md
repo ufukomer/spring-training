@@ -137,10 +137,20 @@ _Go to [reference](http://www.tutorialspoint.com/spring/aspectj_based_aop_appoac
 
 #### 27. Spring MVC - Hello World (mvchelloworld)
 Spring MVC - 101, introduction to Spring MVC.
-#### 28. Spring MVC - Employee Registration (mvcexample)
+#### 28. Spring MVC, Testing - Employee Registration (mvcexample)
 - Spring MVC
 - Hibernate 
 - Validation-api: exception handling
+- Spring Testing
+    - JUnit
+        - @RunWith: JUnit will invoke the class it references to run the tests in that class instead of the runner built into JUnit.
+        - @WebAppConfiguration: Declare that the ApplicationContext loaded for an integration test should be a WebApplicationContext.
+        - @ContextConfiguration: Determine how to load and configure an ApplicationContext for integration tests.
+    - Spring TestContext
+        - MockMvc
+    - Mockito: Mockito library enables mocks creation, verification and stubbing.
+
+_// TODO: Add database testing_
 
 _Note: This module consist of java based configuration, namely xml files haven't been used, it also contains redirection in jsp._
 

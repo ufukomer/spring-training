@@ -14,8 +14,9 @@ import java.util.List;
 public class EmployeeDaoImpl extends AbstractDao implements EmployeeDao {
 
     @Override
-    public void saveEmployee(Employee employee) {
+    public Employee saveEmployee(Employee employee) {
         persist(employee);
+        return employee;
     }
 
     @Override

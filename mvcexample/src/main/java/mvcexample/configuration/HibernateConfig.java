@@ -22,7 +22,7 @@ import java.util.Properties;
 @EnableTransactionManagement // Enables Spring’s annotation-driven transaction management
 @ComponentScan({"mvcexample"})
 @PropertySource("classpath:/application.properties") // Inject these environment values into env object
-public class HibernateConfiguration {
+public class HibernateConfig {
 
     @Autowired
     private Environment environment;

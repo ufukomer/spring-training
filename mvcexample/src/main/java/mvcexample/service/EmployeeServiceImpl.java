@@ -20,8 +20,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeDao dao;
 
     @Override
-    public void saveEmployee(Employee employee) {
-        dao.saveEmployee(employee);
+    public Employee saveEmployee(Employee employee) {
+        return dao.saveEmployee(employee);
     }
 
     @Override

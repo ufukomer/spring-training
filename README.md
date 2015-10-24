@@ -74,7 +74,7 @@ Validation of an email address with SpEL and Regex:
 #### 19. Database Operations With JDBC (datasource)
 - Spring JdbcTemplate (jdbctemplate)
     * Created JdbcTemplate object can be used for multiple SQL operations. Also this JdbcTemplate object can be shared between threads (threadsafe).
-    * [Batch Update](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html#batchUpdate-java.lang.String-org.springframework.jdbc.core.BatchPreparedStatementSetter-, "Spring Documentaion"): Issue multiple update statements on a single PreparedStatement, using batch updates and a BatchPreparedStatementSetter to set values.
+    * [Batch Update](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html#batchUpdate-java.lang.String-org.springframework.jdbc.core.BatchPreparedStatementSetter-, "Spring Documentation"): Issue multiple update statements on a single PreparedStatement, using batch updates and a BatchPreparedStatementSetter to set values.
 - DataSource, HSQL (datasource), Callback Class
     * HSQL is a embedded database, we can also use H2 or DERBY instead.
     * CustomerRowMapper implements RowMapper interface, CustomerExtractor implements ResultSetExtractor so that they can create customer object by using ResultSet object. These are called **Callback Class**.
